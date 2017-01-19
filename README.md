@@ -49,9 +49,9 @@ Set all remote hosts to trusted. Note: You may want to unset this later :
       
       PS D:\Security\PowerShell> Import-Module .\Enum-PrivAccount.psd1
       
- ## Examples 
+## Examples 
  
- ### Ping the servers :
+### Ping the servers :
 PS D:\Security\PowerShell> Test-Targets -ListServer .\server.txt -OutputFileUP srvup.txt -OutputFileDOWN srvdown.txt
  
     [+] The Host 192.168.1.13 is up.
@@ -127,7 +127,8 @@ PS D:\Security\PowerShell> cat .\localaccounts.csv
 ### List Privilged Accounts regarding the given privileged groups list :
 
 PS D:\Security\PowerShell> cat .\privilegedgroups.txt
-Administrateurs
+      
+      Administrateurs
 
 PS D:\Security\PowerShell> Get-PrivilegedAccountsWMI -ListServer .\srvup.txt -ListPrivilegedGroup .\privilegedgroups.txt -OutputCSV privilegedaccounts.csv
 
